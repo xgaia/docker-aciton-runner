@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  runner:
+    image: xgaia/action-runner:latest
+    hostname: docker-action-runner
+    environment:
+      - ORGANIZATION=$ORGANIZATION
+      - ACTION_TOKEN=$ACTION_TOKEN
+      - LABELS=$LABELS
